@@ -91,6 +91,14 @@ This theme, like WordPress, is licensed under the GPL.
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Orwell';
+    src: url("fonts/Orwell-Regular.woff2") format('woff2'),
+         url("fonts/Orwell-Regular.woff") format('woff'),
+         url("fonts/Orwell-Regular.eot") format('otf');
+    font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap');
 
 /** 1.2 - CSS Variables **/

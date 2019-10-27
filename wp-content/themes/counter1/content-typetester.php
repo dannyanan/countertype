@@ -10,7 +10,7 @@
             <section class="fontSize">
                 <label for="size" id="label--size">
                     Size 
-                    <span id="sizeDetail"><?php the_field('size-default'); ?>px</span>
+                    <span id="sizeDetail">24<?php the_field('size-default'); ?>px</span>
                 </label>
                 <input type="range" id="size" min="<?php the_field('size-min'); ?>" max="<?php the_field('size-max'); ?>" value="<?php the_field('size-default'); ?>">
             </section>
@@ -20,7 +20,7 @@
             <section class="lineHeight">
                 <label for="leading" id="label--leading">
                     Leading 
-                    <span id="leadingDetail"><?php the_field('leading-default'); ?>%</span>
+                    <span id="leadingDetail">100<?php the_field('leading-default'); ?>%</span>
                 </label>
                 <input type="range" id="leading" min="<?php the_field('leading-min'); ?>" max="<?php the_field('leading-max'); ?>" value="<?php the_field('leading-default'); ?>">
             </section>
@@ -30,7 +30,7 @@
             <section class="letterSpacing">
                 <label for="kerning" id="label--kerning">
                     Kerning 
-                    <span id="kerningDetail"><?php the_field('kerning-default'); ?>px</span>
+                    <span id="kerningDetail">0<?php the_field('kerning-default'); ?>px</span>
                 </label>
                 <input type="range" id="kerning" min="<?php the_field('kerning-min'); ?>" max="<?php the_field('kerning-max'); ?>" value="<?php the_field('kerning-default'); ?>">
             </section> 
@@ -64,7 +64,7 @@
             -->
         </section> <!--ENDS TOP OPTIONS SECTION-->
         
-        <section id="typeSpecimen" data-font-family="<?php the_field('fontFamily'); ?>">
+        <section id="typeSpecimen" data-font-family="<?php the_field('typeface_name'); ?>">
             <p contenteditable="true">THIS TEXT IS EDITABLE</p>
         </section>
 

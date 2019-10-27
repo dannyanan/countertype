@@ -1,5 +1,5 @@
 window.addEventListener("load", function() {
-    console.log('typetester.js loaded!');
+    // console.log('typetester.js loaded!');
 
 // Gets data from user and updates Type Tester
 
@@ -8,7 +8,7 @@ let typeSpec = document.querySelector("#typeSpecimen");
 // SET FONT FAMILY FOR PAGE
 let fontFamily = typeSpec.dataset.fontFamily;
 typeSpec.style.fontFamily = fontFamily;
-console.log(fontFamily);
+// console.log(fontFamily);
 
 
 // UPDATE SIZE FUNCTIONALITY 
