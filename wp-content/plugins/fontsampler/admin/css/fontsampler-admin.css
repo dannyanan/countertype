@@ -1,0 +1,1311 @@
+#fontsampler-admin table .button {
+  margin: 0 auto;
+}
+#fontsampler-admin .button {
+  clear: both;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.75em;
+  margin: 0 auto;
+  padding: 0.25em 0.5em;
+  position: relative;
+  text-shadow: none;
+  text-decoration: none;
+  transition: background 0.15s ease-in-out;
+}
+#fontsampler-admin .button i.icon {
+  display: inline-block;
+  font-style: normal;
+  height: 100%;
+  left: 0;
+  line-height: 2em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 2em;
+}
+#fontsampler-admin .button span {
+  padding-left: 2em;
+}
+#fontsampler-admin .button.hidden {
+  visibility: hidden;
+}
+#fontsampler-admin .button.button-primary {
+  clear: both;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.75em;
+  margin: 0 auto;
+  padding: 0.25em 0.5em;
+  position: relative;
+  text-shadow: none;
+  text-decoration: none;
+  transition: background 0.15s ease-in-out;
+  background: #64CAF0;
+  color: #FFFFFF;
+}
+#fontsampler-admin .button.button-primary i.icon {
+  display: inline-block;
+  font-style: normal;
+  height: 100%;
+  left: 0;
+  line-height: 2em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 2em;
+}
+#fontsampler-admin .button.button-primary span {
+  padding-left: 2em;
+}
+#fontsampler-admin .button.button-primary.hidden {
+  visibility: hidden;
+}
+#fontsampler-admin .button.button-primary:hover {
+  background: #008EC2;
+}
+#fontsampler-admin .button.add {
+  clear: both;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.75em;
+  margin: 0 auto;
+  padding: 0.25em 0.5em;
+  position: relative;
+  text-shadow: none;
+  text-decoration: none;
+  transition: background 0.15s ease-in-out;
+  background: #B8E986;
+  color: #222222;
+}
+#fontsampler-admin .button.add i.icon {
+  display: inline-block;
+  font-style: normal;
+  height: 100%;
+  left: 0;
+  line-height: 2em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 2em;
+}
+#fontsampler-admin .button.add span {
+  padding-left: 2em;
+}
+#fontsampler-admin .button.add.hidden {
+  visibility: hidden;
+}
+#fontsampler-admin .button.add:hover {
+  background: #7ED321;
+}
+#fontsampler-admin .button.add i.icon {
+  background: #7ED321;
+}
+#fontsampler-admin .button.delete {
+  clear: both;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.75em;
+  margin: 0 auto;
+  padding: 0.25em 0.5em;
+  position: relative;
+  text-shadow: none;
+  text-decoration: none;
+  transition: background 0.15s ease-in-out;
+  background: #E5604E;
+  color: #FFFFFF;
+}
+#fontsampler-admin .button.delete i.icon {
+  display: inline-block;
+  font-style: normal;
+  height: 100%;
+  left: 0;
+  line-height: 2em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 2em;
+}
+#fontsampler-admin .button.delete span {
+  padding-left: 2em;
+}
+#fontsampler-admin .button.delete.hidden {
+  visibility: hidden;
+}
+#fontsampler-admin .button.delete:hover {
+  background: #C0402F;
+}
+#fontsampler-admin .button.delete i.icon {
+  background: #C0402F;
+}
+#fontsampler-admin .button.wp-color-result {
+  padding: 0 0 0 30px;
+  border: 1px solid #CBCBCB;
+  border-radius: 3px;
+}
+#fontsampler-admin .wp-picker-input-wrap {
+  display: inline-block;
+}
+#fontsampler-admin .wp-picker-input-wrap label {
+  display: inline-block !important;
+  margin: 0 1em !important;
+}
+#fontsampler-admin table + .button {
+  margin-top: 1em !important;
+}
+#fontsampler-admin .wp-picker-default {
+  background: lightgrey;
+  position: relative;
+  height: 2em;
+  line-height: 1em !important;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-out;
+  pointer-events: none;
+}
+#fontsampler-admin .wp-picker-container.wp-picker-active .wp-picker-default {
+  opacity: 1;
+  pointer-events: all;
+}
+#fontsampler-admin .fontsampler-copy-clipboard {
+  position: relative;
+  float: left;
+  background: #B8E986;
+  border: 3px solid #CBCBCB;
+  border-left-width: 0;
+  border-radius: 0 5px 5px 0;
+  color: #222222;
+  font-weight: bold;
+  font-size: smaller;
+  padding: 0.4em 1em 0.3em;
+  height: 3em;
+  outline: none;
+  cursor: pointer;
+}
+#fontsampler-admin .fontsampler-copy-clipboard:hover {
+  background: #7ED321;
+}
+#fontsampler-admin .fontsampler-copy-clipboard:after {
+  background: #7ED321;
+  border-radius: 5px;
+  color: #FFFFFF;
+  content: "Copied to clipboard";
+  position: absolute;
+  top: 3em;
+  left: -1em;
+  padding: 0.2em 0.5em;
+  width: 6em;
+  z-index: 99;
+  opacity: 0;
+  height: 0;
+  transition: all 0.2s ease-in-out;
+}
+#fontsampler-admin .fontsampler-copy-clipboard.success:after {
+  opacity: 1;
+  height: auto;
+}
+.rangeslider,
+.rangeslider__fill {
+  display: block;
+}
+.rangeslider {
+  background: #efefef;
+  position: relative;
+}
+.rangeslider--horizontal {
+  height: 1px;
+  width: 100%;
+  clear: both;
+}
+.rangeslider--vertical {
+  width: 20px;
+  min-height: 150px;
+  max-height: 100%;
+}
+.rangeslider--disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+.rangeslider__fill {
+  box-sizing: border-box;
+  position: absolute;
+}
+.rangeslider--horizontal .rangeslider__fill {
+  top: 0;
+  height: 100%;
+}
+.rangeslider--vertical .rangeslider__fill {
+  bottom: 0;
+  width: 100%;
+}
+.rangeslider__handle {
+  background: #333;
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+}
+.rangeslider__handle:after {
+  content: "";
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: 100%;
+  border-radius: 50%;
+}
+.rangeslider__handle:active {
+  background-size: 100%;
+}
+.rangeslider--horizontal .rangeslider__handle {
+  top: -4px;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
+}
+.rangeslider--vertical .rangeslider__handle {
+  left: -4px;
+  touch-action: pan-x;
+  -ms-touch-action: pan-x;
+}
+#fontsampler-admin .form-settings .fontsampler-admin-slider-label .setting-description {
+  min-width: 10em;
+  display: inline-block;
+}
+#fontsampler-admin .form-settings label {
+  clear: both;
+  display: block;
+  margin: 10px 0;
+}
+#fontsampler-admin .form-settings label span.styling-description {
+  float: left;
+}
+#fontsampler-admin .form-settings label div.fontsampler-admin-slider {
+  display: inline-block;
+  width: 20em;
+}
+#fontsampler-admin .form-settings label span input[type="text"],
+#fontsampler-admin .form-settings label span input.current-value {
+  width: 3em;
+}
+#fontsampler-admin .form-settings label textarea {
+  clear: both;
+  display: block;
+}
+#fontsampler-admin .form-settings label small {
+  display: block;
+  margin-bottom: 1em;
+}
+#fontsampler-admin .form-settings label input.fontsampler-admin-slider-label {
+  width: 15em;
+}
+#fontsampler-admin .fontsampler-settings-reset {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: -5em;
+}
+#fontsampler-admin .fontsampler-settings-reset p {
+  margin: 0;
+}
+#fontsampler-admin .fontsampler-admin-feature-label-reset {
+  border-width: 2px;
+  color: #DDAA33;
+  cursor: pointer;
+}
+#fontsampler-admin .fontsampler-admin-feature-label-reset:hover,
+#fontsampler-admin .fontsampler-admin-feature-label-reset:focus {
+  border-color: #DDAA33;
+  color: #DDAA33;
+}
+#fontsampler-admin #fontsampler-fontset-list .fontsampler-font-set {
+  background: #F2F2F2;
+  padding: 0.5em;
+}
+#fontsampler-admin #fontsampler-fontset-list .fontsampler-font-set .fontsampler-fonts-table {
+  background: #FFFFFF;
+  margin-top: 1em;
+}
+#fontsampler-admin #fontsampler-fontset-list li select {
+  width: 22.25em;
+}
+#fontsampler-admin .fontsampler-fontset-inline h2 {
+  display: none;
+}
+#fontsampler-admin .fontsampler-fontset-inline thead {
+  display: none;
+}
+#fontsampler-admin .fontsampler-fontset-inline .fontsampler-fontset-inline-wrapper {
+  display: inline-block;
+  width: 24em;
+}
+#fontsampler-admin .fontsampler-options fieldset > div > label {
+  display: inline-block;
+}
+#fontsampler-admin .fontsampler-css-color-block {
+  border: 1px solid #222222;
+  border-radius: 0.25em;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  top: 0.25em;
+  position: relative;
+  margin: 0 0.5em;
+}
+#fontsampler-admin .fontsampler-admin-slider-label {
+  width: 100%;
+}
+#fontsampler-admin .fontsampler-admin-slider-label input[type=range] {
+  margin: 1em 0;
+  width: 100%;
+}
+#fontsampler-admin .fontsampler-default-value {
+  background: #F2F2F2;
+  border: 1px solid #CBCBCB;
+  border-radius: 0.25em;
+  color: #222222;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+}
+#fontsampler-admin .fontsampler-options-settings .fontsampler-color-picker {
+  margin-left: 0.5em;
+}
+#fontsampler-admin .fontsampler-options-settings .fontsampler-options-row > div {
+  width: auto;
+}
+#fontsampler-admin .fontsampler-sample_texts {
+  min-height: 10em;
+  width: 100%;
+}
+#fontsampler-admin .fontsampler-options.default-text-alignment > div {
+  clear: both;
+}
+#fontsampler-admin .fontsampler-options.default-text-alignment > div label {
+  display: inline-block;
+  margin-right: 2em;
+}
+#fontsampler-admin textarea[name=initial] {
+  min-height: 10em;
+  width: 30em;
+}
+#fontsampler-admin .fontsampler-options.ui-accordion-disabled h3 {
+  color: #cccccc !important;
+  cursor: not-allowed;
+}
+#fontsampler-admin .fontsampler-options h3 {
+  background: #F2F2F2;
+  color: #4A4A4A;
+  cursor: pointer;
+  height: 1em;
+  padding: 0.5em 1em;
+  outline: none;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+#fontsampler-admin .fontsampler-options h3:hover,
+#fontsampler-admin .fontsampler-options h3:focus {
+  color: #008EC2;
+}
+#fontsampler-admin .fontsampler-options h3.ui-accordion-header-active {
+  color: #4A4A4A !important;
+}
+#fontsampler-admin .fontsampler-options fieldset {
+  border: 3px solid #F2F2F2;
+  display: none;
+  margin: 0 0 10px;
+}
+#fontsampler-admin .fontsampler-options fieldset > div > label {
+  margin: 0.5em 0;
+}
+#fontsampler-admin .fontsampler-options-row {
+  clear: both;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#fontsampler-admin .fontsampler-options-row:nth-of-type(2n + 1) {
+  background: #F2F2F2;
+}
+#fontsampler-admin .fontsampler-options-row:nth-of-type(2n) {
+  background: #FFFFFF;
+}
+#fontsampler-admin .fontsampler-options-row > * {
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+}
+#fontsampler-admin .fontsampler-options-row small {
+  display: block;
+  font-weight: normal;
+}
+#fontsampler-admin .fontsampler-options-row > strong {
+  box-sizing: border-box;
+  padding: 0.75em 1em;
+  flex-basis: 20%;
+  flex-shrink: 0;
+}
+#fontsampler-admin .fontsampler-options-row > div {
+  box-sizing: border-box;
+  padding: 0.5em;
+  flex-basis: 40%;
+  flex-shrink: 1;
+}
+#fontsampler-admin .fontsampler-options-row > div:nth-of-type(1) {
+  border-left: 5px solid #FFFFFF;
+  border-right: 3px solid #FFFFFF;
+}
+#fontsampler-admin .fontsampler-options-row > div .settings-description small code {
+  padding: 0.5em !important;
+  white-space: nowrap;
+  line-height: 2em;
+}
+#fontsampler-admin .fontsampler-options-row > div .settings-description + input[type=text] {
+  margin-left: 1.75em;
+  margin-bottom: 0.5em;
+}
+#fontsampler-admin .fontsampler-options-row > div .upload-custom-img {
+  clear: both;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.75em;
+  margin: 0 auto;
+  padding: 0.25em 0.5em;
+  position: relative;
+  text-shadow: none;
+  text-decoration: none;
+  transition: background 0.15s ease-in-out;
+  background: #B8E986;
+  color: #222222;
+}
+#fontsampler-admin .fontsampler-options-row > div .upload-custom-img i.icon {
+  display: inline-block;
+  font-style: normal;
+  height: 100%;
+  left: 0;
+  line-height: 2em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 2em;
+}
+#fontsampler-admin .fontsampler-options-row > div .upload-custom-img span {
+  padding-left: 2em;
+}
+#fontsampler-admin .fontsampler-options-row > div .upload-custom-img.hidden {
+  visibility: hidden;
+}
+#fontsampler-admin .fontsampler-options-row > div .upload-custom-img:hover {
+  background: #7ED321;
+}
+#fontsampler-admin .fontsampler-options-row > div .upload-custom-img i.icon {
+  background: #7ED321;
+}
+#fontsampler-admin .fontsampler-options-row > div .upload-custom-img.hidden {
+  display: none;
+}
+#fontsampler-admin .fontsampler-options-row > div .delete-custom-img {
+  clear: both;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.75em;
+  margin: 0 auto;
+  padding: 0.25em 0.5em;
+  position: relative;
+  text-shadow: none;
+  text-decoration: none;
+  transition: background 0.15s ease-in-out;
+  background: #E5604E;
+  color: #FFFFFF;
+}
+#fontsampler-admin .fontsampler-options-row > div .delete-custom-img i.icon {
+  display: inline-block;
+  font-style: normal;
+  height: 100%;
+  left: 0;
+  line-height: 2em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 2em;
+}
+#fontsampler-admin .fontsampler-options-row > div .delete-custom-img span {
+  padding-left: 2em;
+}
+#fontsampler-admin .fontsampler-options-row > div .delete-custom-img.hidden {
+  visibility: hidden;
+}
+#fontsampler-admin .fontsampler-options-row > div .delete-custom-img:hover {
+  background: #C0402F;
+}
+#fontsampler-admin .fontsampler-options-row > div .delete-custom-img i.icon {
+  background: #C0402F;
+}
+#fontsampler-admin .fontsampler-options-row > div .delete-custom-img.hidden {
+  display: none;
+}
+#fontsampler-admin .fontsampler-options-row .fontsampler-options-row-values {
+  display: block;
+  padding: 0 0 0 1.75em;
+}
+#fontsampler-admin .fontsampler-options-settings .fontsampler-options-row-values {
+  padding: 0 0.5em;
+}
+#fontsampler-admin .fontsampler-options-settings .fontsampler-options-row > div:nth-of-type(1) {
+  border-right: 0;
+}
+#fontsampler-admin .fontsampler-options-features-details {
+  overflow: auto;
+  display: none;
+  margin-left: 1.7em;
+}
+#fontsampler-admin .fontsampler-options-features-details.fontsampler-visible {
+  border: 2px solid #F2F2F2;
+}
+#fontsampler-admin .fontsampler-options-features-details.fontsampler-options-unchecked .fontsampler-options-row {
+  opacity: 0.1;
+}
+#fontsampler-admin .fontsampler-options-features-details.fontsampler-options-unchecked .fontsampler-options-row.fontsampler-options-row-fontsize_initial,
+#fontsampler-admin .fontsampler-options-features-details.fontsampler-options-unchecked .fontsampler-options-row.fontsampler-options-row-lineheight_initial,
+#fontsampler-admin .fontsampler-options-features-details.fontsampler-options-unchecked .fontsampler-options-row.fontsampler-options-row-letterspacing_initial {
+  opacity: 1;
+}
+#fontsampler-admin .fontsampler-options-features-details input[type=range] {
+  width: 100%;
+}
+#fontsampler-admin .fontsampler-options-features-details input.current-value {
+  width: 3em;
+}
+#fontsampler-admin .fontsampler-options-features-details label {
+  display: inline-block;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+#fontsampler-admin .fontsampler-admin-slider {
+  margin: 0.5em 0;
+  width: 10rem;
+  display: block;
+}
+#fontsampler-admin .fontsampler-setting-image .fontsampler-upload-wrapper {
+  display: inline-block;
+}
+#fontsampler-admin .fontsampler-setting-image .custom-image-container {
+  display: block;
+  max-width: 100px;
+  max-height: 30px;
+  position: relative;
+}
+#fontsampler-admin .fontsampler-setting-image .custom-image-container img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+#fontsampler-admin .fontsampler-admin-alignment-icon {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  height: 15px;
+  margin-right: 0.5em;
+  padding: 5px;
+  position: relative;
+  top: 8px;
+  width: 15px;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper {
+  position: relative;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper:hover .fontsampler-ui-block,
+#fontsampler-admin #fontsampler-admin-ui-wrapper:hover .fontsampler-interface-row-break {
+  outline: 2px solid #64CAF0;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-blocks-list {
+  display: none;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview {
+  border: 4px solid #F2F2F2;
+  padding: 10px;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview label {
+  margin: 0;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface {
+  position: relative;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-interface-row-break {
+  cursor: move;
+  height: 1.5em;
+  background: #F2F2F2;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-interface-row-break:before {
+  content: "ROW BREAK";
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-interface-row-break:hover {
+  outline: 2px solid #008EC2;
+  background: #64CAF0;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-interface-row-break .fontsampler-delete-row-break {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  line-height: 1;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: bold;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-ui-block {
+  position: relative;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-ui-block:hover .fontsampler-ui-block-overlay,
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-ui-block.fontsampler-ui-block-menu-open .fontsampler-ui-block-overlay {
+  display: block;
+  outline: 2px solid #008EC2;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-ui-block.fontsampler-ui-block-menu-open .fontsampler-ui-block-overlay .fontsampler-ui-block-options {
+  display: block;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-ui-block .fontsampler-ui-block-overlay {
+  background: rgba(100, 200, 240, 0.9);
+  box-sizing: border-box;
+  cursor: move !important;
+  display: none;
+  height: 100%;
+  left: 0;
+  outline: 2px solid #64CAF0;
+  opacity: 1;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 19;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-ui-block .fontsampler-ui-block-overlay .fontsampler-ui-block-settings {
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  outline: none;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-ui-block .fontsampler-ui-block-overlay .fontsampler-ui-block-settings img {
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-ui-block .fontsampler-ui-block-overlay .fontsampler-ui-block-options {
+  border: 2px solid #008EC2;
+  display: none;
+  padding: 10px;
+  position: absolute;
+  right: -1px;
+  top: 100%;
+  background: rgba(255, 200, 50, 0.9);
+  min-width: 15em;
+  width: auto;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-ui-block .fontsampler-ui-block-overlay .fontsampler-ui-block-options .fontsampler-ui-block-add-break {
+  margin-bottom: 1em;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview .fontsampler-interface .fontsampler-ui-block .fontsampler-ui-block-overlay .fontsampler-ui-block-options .fontsampler-ui-block-layout-classes label {
+  display: block;
+  margin: 0.5em 0;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper #fontsampler-ui-layout-preview-options {
+  clear: both;
+  display: block;
+}
+#fontsampler-admin #fontsampler-admin-ui-wrapper .type-tester__slider {
+  margin-top: 4px;
+}
+#fontsampler-admin ul.fontsampler-ui-preview-placeholder li {
+  display: none;
+}
+#fontsampler-admin header {
+  background: white;
+  margin: 1.5em 1.5em 0 0;
+  padding: 1em 1em;
+}
+#fontsampler-admin #fontsampler-menu ul {
+  border-bottom: 4px solid #008EC2;
+  margin: 0;
+  padding: 0 1em;
+}
+#fontsampler-admin #fontsampler-menu ul li {
+  padding: 0;
+  margin: 0;
+  font-size: larger;
+  display: inline-block;
+  border-bottom: 0;
+  background: #FFFFFF;
+}
+#fontsampler-admin #fontsampler-menu ul li a {
+  border: 0;
+  background: #F2F2F2;
+  border-radius: 0;
+  border-bottom: 0;
+  box-shadow: none;
+  color: #008EC2;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  outline: none;
+  transition: background 0.15s ease-in-out;
+}
+#fontsampler-admin #fontsampler-menu ul li a:active {
+  background: #FFFFFF !important;
+  color: #008EC2 !important;
+}
+#fontsampler-admin #fontsampler-menu ul li a:hover,
+#fontsampler-admin #fontsampler-menu ul li a:focus {
+  background: #64CAF0;
+  border-bottom: 0;
+  color: #fff;
+}
+#fontsampler-admin #fontsampler-menu ul li a.latest-changes {
+  background: #E5604E !important;
+  color: #FFFFFF !important;
+}
+#fontsampler-admin #fontsampler-menu ul li.current a {
+  background: #008EC2;
+  border-bottom: 0;
+  color: #FFFFFF;
+}
+#fontsampler-admin footer {
+  margin: 1em 1.5em 1em 0;
+}
+#fontsampler-admin footer .fontsampler-logos {
+  margin: 1em 0;
+  padding: 1em 2em 0.5em;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+#fontsampler-admin footer .fontsampler-logos .fontsampler-creators {
+  text-align: right;
+}
+#fontsampler-admin footer .fontsampler-logos .fontsampler-creators strong a {
+  padding: 0;
+  width: auto;
+}
+#fontsampler-admin footer .fontsampler-logos .fontsampler-creators a {
+  display: inline-block;
+  padding: 20px 0;
+  width: 160px;
+}
+#fontsampler-admin footer .fontsampler-logos .fontsampler-creators a img {
+  width: 100%;
+  height: auto;
+}
+#fontsampler-admin footer .fontsampler-logos strong {
+  display: block;
+}
+#fontsampler-admin footer .fontsampler-logos a {
+  display: block;
+}
+#fontsampler-admin footer .fontsampler-logos img {
+  display: block;
+}
+#fontsampler-admin footer .fontsampler-logos .fontsampler-supporters ul {
+  overflow: auto;
+}
+#fontsampler-admin footer .fontsampler-logos .fontsampler-supporters li {
+  box-sizing: border-box;
+  display: inline-block;
+  padding-right: 1em;
+  width: 120px;
+}
+#fontsampler-admin footer .fontsampler-logos .fontsampler-supporters li > a {
+  height: 0;
+  padding-top: 62.5%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+#fontsampler-admin footer .fontsampler-logos .fontsampler-supporters li > a img {
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+#fontsampler-admin footer .fontsampler-logos .fontsampler-supporters li > img {
+  display: block;
+  height: 12.5%;
+  width: 100%;
+}
+#fontsampler-admin footer .fontsampler-donate {
+  padding: 0 2em 1.5em;
+  margin: 1em 0;
+  background: white;
+  text-align: left;
+  font-weight: bold;
+}
+#fontsampler-admin footer .fontsampler-donate form {
+  display: inline-block;
+  position: relative;
+  top: 0.85em;
+}
+#fontsampler-admin footer .fontsampler-donate input {
+  border: 0;
+}
+body.rtl #fontsampler-admin table,
+body.rtl #fontsampler-admin thead,
+body.rtl #fontsampler-admin tbody,
+body.rtl #fontsampler-admin tr,
+body.rtl #fontsampler-admin th,
+body.rtl #fontsampler-admin td {
+  text-align: right;
+}
+body.rtl #fontsampler-admin code.fontsampler-clipboard,
+body.rtl #fontsampler-admin .fontsampler-copy-clipboard {
+  float: right;
+}
+body.rtl #fontsampler-admin code.fontsampler-clipboard {
+  border-radius: 0 5px 5px 0;
+}
+body.rtl #fontsampler-admin .fontsampler-copy-clipboard {
+  border-radius: 5px 0 0 5px;
+  border-left-width: 3px !important;
+  border-right-width: 0;
+}
+body.rtl #fontsampler-admin .fontsampler-settings-reset {
+  float: left;
+}
+body.rtl #fontsampler-admin footer li {
+  float: right;
+}
+body.rtl #fontsampler-admin .fontsampler-options.default-text-alignment > div label {
+  margin-right: 0;
+  margin-left: 2em;
+}
+/*
+ * Scope all css to be contained only within the fontsampler wrapper
+ */
+#fontsampler-admin {
+  padding-top: 1em;
+}
+#fontsampler-admin main {
+  background: white;
+  margin: 0 1.5em 0 0;
+  padding: 1em 2em;
+}
+#fontsampler-admin .notice {
+  margin: 1em 0;
+}
+#fontsampler-admin fieldset label,
+#fontsampler-admin label.fontsampler-admin-label-block {
+  display: block;
+  color: #4A4A4A;
+  margin: 0.5em 0;
+}
+#fontsampler-admin .submit {
+  padding: 0;
+  margin: 3em 0;
+}
+#fontsampler-admin .submit input {
+  border: none;
+}
+#fontsampler-admin table .submit {
+  margin: 1em 0;
+}
+#fontsampler-admin input {
+  border: 1px solid #aaa;
+}
+#fontsampler-admin input[type=file] {
+  border: 0;
+}
+#fontsampler-admin input[type=file]:hover,
+#fontsampler-admin input[type=file]:focus {
+  border: 0;
+}
+#fontsampler-admin input[type=text],
+#fontsampler-admin textarea {
+  border: 2px solid #CBCBCB;
+}
+#fontsampler-admin input[type=text]:hover,
+#fontsampler-admin textarea:hover,
+#fontsampler-admin input[type=text]:focus,
+#fontsampler-admin textarea:focus {
+  box-shadow: none;
+  border: 2px solid #64CAF0;
+}
+#fontsampler-admin input[type=text].fontsampler-input-warning {
+  border-color: #C0402F;
+}
+#fontsampler-admin fieldset {
+  border: 4px solid #F2F2F2;
+  padding: 1em;
+}
+#fontsampler-admin fieldset.no-padding {
+  padding: 0;
+}
+#fontsampler-admin fieldset legend {
+  font-weight: bold;
+  padding: 0 0.5em;
+}
+#fontsampler-admin table,
+#fontsampler-admin thead,
+#fontsampler-admin tbody,
+#fontsampler-admin tr,
+#fontsampler-admin th,
+#fontsampler-admin td {
+  text-align: left;
+  vertical-align: middle;
+}
+#fontsampler-admin table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin: -1em auto 0;
+  border: 4px solid #F2F2F2;
+  padding: 4px;
+}
+#fontsampler-admin table.fontsampler-fontset-files {
+  margin: 0 auto;
+}
+#fontsampler-admin input.fontsampler-font-set-fontname {
+  width: 20em;
+}
+#fontsampler-admin th,
+#fontsampler-admin td {
+  padding: 0.25em 0.5em;
+}
+#fontsampler-admin td {
+  border-bottom: 1px solid #fafafa;
+}
+#fontsampler-admin th {
+  background: #F2F2F2;
+  font-weight: bold;
+  font-size: inherit;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+#fontsampler-admin th small {
+  font-size: smaller;
+  font-weight: normal;
+  text-transform: none;
+}
+#fontsampler-admin p {
+  font-size: inherit;
+  max-width: 60em;
+}
+#fontsampler-admin aside {
+  font-size: smaller;
+  font-weight: normal;
+  color: #AAA;
+  max-width: 60em;
+}
+#fontsampler-admin .text-box {
+  max-width: 60em;
+}
+#fontsampler-admin h1,
+#fontsampler-admin h2,
+#fontsampler-admin h3,
+#fontsampler-admin h4,
+#fontsampler-admin h5,
+#fontsampler-admin h6 {
+  clear: both;
+  display: block;
+}
+#fontsampler-admin h2,
+#fontsampler-admin h3,
+#fontsampler-admin h4,
+#fontsampler-admin h5,
+#fontsampler-admin h6 {
+  margin-top: 2em;
+}
+#fontsampler-admin small {
+  color: #AAA;
+  font-size: smaller;
+  font-family: sans-serif;
+  line-height: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+#fontsampler-admin code {
+  border: 3px solid #CBCBCB;
+  font-family: monospace;
+  background: #F2F2F2;
+  padding: 0.4em 1em 0.3em;
+  font-size: smaller;
+  border-radius: 5px;
+  text-align: center;
+}
+#fontsampler-admin code.fontsampler-clipboard {
+  border-radius: 5px 0 0 5px;
+  float: left;
+  box-sizing: border-box;
+  height: 3em;
+  margin: 0;
+  display: block;
+}
+#fontsampler-admin small code {
+  border-width: 1px !important;
+  padding: 0.1em 0.25em !important;
+}
+#fontsampler-admin .fontsampler-clipboard-wrapper {
+  min-width: 15em;
+}
+#fontsampler-admin .fontsampler-clipboard-wrapper:hover > * {
+  border-color: #B8E986;
+}
+#fontsampler-admin .filename {
+  font-family: monospace;
+  font-size: smaller;
+}
+#fontsampler-admin td .fileformat {
+  display: inline-block;
+  width: 4em;
+}
+#fontsampler-admin .fontsampler-num-notifications {
+  border-radius: 100%;
+  background: #E5604E;
+  color: #FFFFFF;
+  display: inline-block;
+  height: 1.25em;
+  margin: 0 0 -0.25em 0.5em;
+  text-align: center;
+  width: 1.25em;
+}
+#fontsampler-admin ul.real-list {
+  list-style: disc;
+  margin: 0 0 0 2em;
+}
+#fontsampler-admin .fontsampler-admin-placeholders {
+  display: none;
+}
+#fontsampler-admin .fontsampler-options-checkbox label > span {
+  display: inline;
+  margin-left: -35px;
+  padding-left: 0px;
+  left: 40px;
+  position: relative;
+}
+#fontsampler-admin .fontsampler-options-checkbox small {
+  display: block;
+  margin-left: 40px;
+}
+#fontsampler-admin #fontsampler-options-checkboxes {
+  display: block;
+}
+#fontsampler-admin #fontsampler-options-checkboxes.use-defaults {
+  display: none;
+}
+#fontsampler-admin .fontsampler-admin-column-wrapper {
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+  width: 100%;
+}
+#fontsampler-admin .fontsampler-admin-column-half {
+  width: 45%;
+}
+#fontsampler-admin .selectric .button {
+  border: none;
+  display: block;
+  position: absolute;
+}
+#fontsampler-admin #fontsampler-fontset-from {
+  max-width: 50em;
+}
+#fontsampler-admin #fontsampler-edit-sample textarea[name="initial"] {
+  width: 100%;
+}
+#fontsampler-admin .fontsampler-initial-font-selection {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.25em;
+  margin-left: 1em;
+}
+#fontsampler-admin .fontsampler-initial-font.selected span.initial-font-selected {
+  display: inline-block;
+}
+#fontsampler-admin .fontsampler-initial-font.selected span.initial-font-unselected {
+  display: none;
+}
+#fontsampler-admin .fontsampler-initial-font span.initial-font-selected {
+  display: none;
+}
+#fontsampler-admin .fontsampler-initial-font span.initial-font-unselected {
+  display: inline-block;
+}
+#fontsampler-admin.fontsampler-admin-hide-legacy-formats .fontsampler-admin-legacy-format {
+  display: none;
+}
+#fontsampler-admin.fontsampler-admin-show-legacy-formats .fontsampler-admin-legacy-format {
+  display: table-row;
+}
+#fontsampler-admin .fontsampler-pagination ul {
+  margin: 0 auto;
+  display: inline-block;
+  background: #F2F2F2;
+  padding: 1em 0.5em;
+}
+#fontsampler-admin .fontsampler-pagination ul li {
+  display: inline-block;
+}
+#fontsampler-admin .fontsampler-pagination a {
+  background: #FFFFFF;
+  border: 0;
+  color: #008EC2;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 0.25em;
+  padding: 0.25em 0.75em;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  letter-spacing: 2px;
+  transition: background 0.15s ease-in-out;
+}
+#fontsampler-admin .fontsampler-pagination a.fontsampler-pagination-current-page {
+  color: #FFFFFF;
+  background: #008EC2;
+}
+#fontsampler-admin .fontsampler-pagination a:hover,
+#fontsampler-admin .fontsampler-pagination a:focus {
+  background: #64CAF0;
+  color: #FFFFFF;
+}
+#fontsampler-admin .fontsampler-pagination + table {
+  margin-top: -1em;
+}
+#fontsampler-admin table + .fontsampler-pagination {
+  margin-bottom: 1em;
+}
+#fontsampler-admin label.fontsampler-label-disabled .settings-description {
+  color: #cccccc;
+}
+#fontsampler-admin label.fontsampler-radio {
+  display: inline-block;
+  margin: 0.5em 0;
+}
+#fontsampler-admin label.fontsampler-radio.block {
+  display: block;
+}
+#fontsampler-admin label.fontsampler-radio input[type=radio] {
+  display: inline-block;
+  margin: 0.1em 0.5em 0em;
+  vertical-align: top;
+}
+#fontsampler-admin label.fontsampler-radio span {
+  display: inline-block;
+}
+#fontsampler-admin .fontsampler-toggle-show-hide span {
+  display: none;
+}
+#fontsampler-admin .fontsampler-toggle-show-hide span:first-child {
+  display: block;
+}
+#fontsampler-admin .fontsampler-visible {
+  display: block;
+}
+#fontsampler-admin .fontsampler-button-link {
+  background: transparent;
+  border: 0;
+  color: #008EC2;
+  cursor: pointer;
+  display: inline-block;
+  font-size: smaller;
+  outline: 0;
+  padding: 0 1em;
+  margin: 0;
+  vertical-align: text-bottom;
+}
+#fontsampler-admin .fontsampler-image-radio {
+  background: #FFFFFF;
+  position: relative;
+  padding: 0.25em 0.5em;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+#fontsampler-admin .fontsampler-image-radio:hover {
+  border: 1px solid #64CAF0;
+}
+#fontsampler-admin .fontsampler-image-radio:hover i {
+  color: #64CAF0;
+}
+#fontsampler-admin .fontsampler-image-radio.active {
+  border: 1px solid #CBCBCB;
+}
+#fontsampler-admin .fontsampler-image-radio.active i {
+  color: #008EC2;
+}
+#fontsampler-admin .fontsampler-image-radio input[type="radio"] {
+  display: block;
+  visibility: hidden;
+  width: 1em;
+  position: absolute;
+  left: -1em;
+  top: 0;
+}
+#fontsampler-admin fieldset.fontsampler-fix-default-settings li {
+  margin: 1em 0;
+}
+#fontsampler-admin fieldset.fontsampler-fix-default-settings .submit {
+  margin: 0;
+}
+#fontsampler-admin .fontsampler-list-font-link {
+  cursor: pointer;
+}
+#fontsampler-admin .ui-sortable-handle {
+  cursor: grab;
+  padding: 5px 10px;
+}
+#fontsampler-admin .ui-sortable-helper {
+  background: #64CAF0;
+}
+.fontsampler-changelog-fix strong {
+  color: #DDAA33;
+}
+.fontsampler-changelog-tweak strong {
+  color: #7ED321;
+}
+.fontsampler-changelog-feature strong {
+  color: #008EC2;
+}
+.fontsampler-changelog-notice strong {
+  color: #C0402F;
+}

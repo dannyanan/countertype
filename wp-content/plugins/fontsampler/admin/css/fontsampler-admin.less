@@ -1,0 +1,481 @@
+@import "admin-variables.less";
+@import "admin-buttons.less";
+@import "../../css/fontsampler-custom-rangeslider.less";
+
+@import "admin-settings.less";
+@import "admin-sampler.less";
+@import "admin-fontsets.less";
+@import "admin-options.less";
+@import "admin-preview.less"; 
+
+@import "admin-header.less"; 
+@import "admin-footer.less";
+
+@import "admin-rtl.less";
+
+/*
+ * Scope all css to be contained only within the fontsampler wrapper
+ */
+#fontsampler-admin {
+
+    padding-top: 1em;
+
+    main {
+        background: white;
+        margin: 0 1.5em 0 0;
+        padding: 1em 2em;
+    }
+
+    .notice {
+        margin: 1em 0;
+    }
+
+    fieldset label, label.fontsampler-admin-label-block {
+        display: block;
+        color: @fs_color_text_medium;
+        margin: 0.5em 0;
+    }
+
+    .submit {
+        padding: 0;
+        margin: 3em 0;
+        input {
+            border: none;
+        }
+    }
+    table .submit {
+        margin: 1em 0;
+    }
+
+    input {
+        border: 1px solid #aaa;
+    }
+    input[type=file] {
+        border: 0;
+        &:hover, &:focus {
+            border: 0;
+        }
+    }
+
+    input[type=text], textarea {
+        border: 2px solid @fs_color_medium;
+
+        &:hover, &:focus {
+            box-shadow: none;
+            border: 2px solid @fs_color_ok_light;
+        }
+    }
+
+    input[type=text].fontsampler-input-warning {
+        border-color: @fs_color_delete;
+    }
+
+    fieldset {
+        border: 4px solid @fs_color_light;
+        padding: 1em;
+
+        &.no-padding {
+            padding: 0;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 0.5em;
+        }
+    }
+
+    table, thead, tbody, tr, th, td {
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        margin: -1em auto 0;
+        border: 4px solid @fs_color_light;
+        padding: 4px;
+
+        &.fontsampler-fontset-files {
+            margin: 0 auto;
+        }
+    }
+
+    input.fontsampler-font-set-fontname {
+        width: 20em;
+    }
+
+    th, td {
+        padding: 0.25em 0.5em;
+    }
+
+    td {
+        border-bottom: 1px solid #fafafa;
+    }
+
+    th {
+        background: @fs_color_light;
+        font-weight: bold;
+        font-size: inherit;
+        text-transform: uppercase;
+        vertical-align: top;
+        small {
+            font-size: smaller;
+            font-weight: normal;
+            text-transform: none;
+        }
+    }
+
+    p {
+        font-size: inherit;
+        max-width: 60em;
+    }
+
+    aside {
+        font-size: smaller;
+        font-weight: normal;
+        color: #AAA;
+        max-width: 60em;
+    }
+
+    .text-box {
+        max-width: 60em;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        clear: both;
+        display: block;
+    }
+    h2, h3, h4, h5, h6 {
+        margin-top: 2em;
+    }
+
+    small {
+        color: #AAA;
+        font-size: smaller;
+        font-family: sans-serif;
+        line-height: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    code {
+        border: 3px solid @fs_color_medium;
+        font-family: monospace;
+        background: @fs_color_light;
+        padding: 0.4em 1em 0.3em;
+        font-size: smaller;
+        border-radius: 5px;
+        text-align: center;
+
+        &.fontsampler-clipboard {
+            border-radius: 5px 0 0 5px;
+            float: left;
+            box-sizing: border-box;
+            height: 3em;
+            margin: 0;
+            display: block;
+        }
+    }
+
+    small code {
+        border-width: 1px !important;
+        padding: 0.1em 0.25em !important;
+    }
+
+    .fontsampler-clipboard-wrapper {
+        min-width: 15em;
+        &:hover {
+            & > * {
+                border-color: @fs_color_add_light;
+            }
+        }
+    }
+
+    .filename {
+        font-family: monospace;
+        font-size: smaller;
+    }
+
+    td .fileformat {
+        display: inline-block;
+        width: 4em;
+    }
+
+    .fontsampler-num-notifications {
+        border-radius: 100%;
+        background: @fs_color_delete_light;
+        color: @fs_color_white;
+        display: inline-block;
+        height: 1.25em;
+        margin: 0 0 -0.25em 0.5em;
+        text-align: center;
+        width: 1.25em;
+    }
+
+    ul.real-list {
+        list-style: disc;
+        margin: 0 0 0 2em;
+    }
+
+    // any sort of hidden placeholder
+    .fontsampler-admin-placeholders {
+        display: none;
+    }
+
+    // wrapper with label > span + input[type=checkbox]
+    .fontsampler-options-checkbox {
+        label > span {
+            display: inline;
+            margin-left: -35px;
+            padding-left: 0px;
+            left: 40px;
+            position: relative;
+        }
+        small {
+            display: block;
+            margin-left: 40px;
+        }
+    }
+
+    #fontsampler-options-checkboxes {
+        display: block;
+
+        &.use-defaults {
+            display: none;
+        }
+    }
+
+    .fontsampler-admin-column-wrapper {
+        clear: both;
+        display: flex;
+        justify-content: space-between;
+        overflow: auto;
+        width: 100%;
+    }
+
+    .fontsampler-admin-column-half {
+        width: 45%;
+    }
+
+    .selectric .button {
+        border: none;
+        display: block;
+        position: absolute;
+    }
+
+    #fontsampler-fontset-from {
+        max-width: 50em;
+    }
+
+    #fontsampler-edit-sample textarea[name="initial"] {
+        width: 100%;
+    }
+
+    .fontsampler-initial-font-selection {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0.25em;
+        margin-left: 1em;
+    }
+
+    .fontsampler-initial-font {
+        &.selected {
+            span.initial-font-selected {
+                display: inline-block;
+            }
+            span.initial-font-unselected {
+                display: none;
+            }
+        }
+        span.initial-font-selected {
+            display: none;
+        }
+        span.initial-font-unselected {
+            display: inline-block;
+        }
+
+    }
+
+    // hiding or showing legacy file format fields
+    &.fontsampler-admin-hide-legacy-formats {
+        .fontsampler-admin-legacy-format {
+            display: none;
+        }
+    }
+
+    &.fontsampler-admin-show-legacy-formats {
+        .fontsampler-admin-legacy-format {
+            display: table-row;
+        }
+    }
+
+    // pagination
+    .fontsampler-pagination {
+        ul {
+            margin: 0 auto;
+            display: inline-block;
+            background: @fs_color_light;
+            padding: 1em 0.5em;
+
+            li {
+                display: inline-block;
+            }
+        }
+
+        a {
+            background: @fs_color_white;
+            border: 0;
+            color: @fs_color_link;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 0.25em;
+            padding: 0.25em 0.75em;
+            outline: none;
+            box-shadow: none;
+            border-radius: 0;
+            letter-spacing: 2px;
+            transition: background 0.15s ease-in-out;
+
+            &.fontsampler-pagination-current-page {
+                color: @fs_color_white;
+                background: @fs_color_ok;
+            }
+
+            &:hover, &:focus {
+                background: @fs_color_ok_light;
+                color: @fs_color_white;
+            }
+        }
+    }
+
+    .fontsampler-pagination + table {
+        margin-top: -1em;
+    }
+
+    table + .fontsampler-pagination {
+        margin-bottom: 1em;
+    }
+
+    label.fontsampler-label-disabled {
+        .settings-description {
+            color: @fs_color_disabled;
+        }
+    }
+
+    label.fontsampler-radio {
+        display: inline-block;
+        margin: 0.5em 0;
+
+        &.block {
+            display: block;
+        }
+
+        input[type=radio] {
+            display: inline-block;
+            margin: 0.1em 0.5em 0em;
+            vertical-align: top;
+        }
+        span {
+            display: inline-block;
+        }
+    }
+
+    .fontsampler-toggle-show-hide {
+        span {
+            display: none;
+        }
+        span:first-child {
+            display: block;
+        }
+    }
+
+    .fontsampler-visible {
+        display: block;
+    }
+
+    // <button> link that looks just like text link
+    .fontsampler-button-link {
+        background: transparent;
+        border: 0;
+        color: @fs_color_link;
+        cursor: pointer;
+        display: inline-block;
+        font-size: smaller;
+        outline: 0;
+        padding: 0 1em;
+        margin: 0;
+        vertical-align: text-bottom;
+    }
+
+    .fontsampler-image-radio {
+        background: @fs_color_white;
+        position: relative;
+        padding: 0.25em 0.5em;
+        border-radius: 5px;
+        box-sizing: border-box;
+        border: 1px solid transparent;
+
+        &:hover {
+            border: 1px solid @fs_color_ok_light;
+            i {
+                color: @fs_color_ok_light;
+            }
+        }
+
+        &.active {
+            border: 1px solid @fs_color_medium;
+            i {
+                color: @fs_color_ok;
+            }
+        }
+        input[type="radio"] {
+            display: block;
+            visibility: hidden;
+            width: 1em;
+            position: absolute;
+            left: -1em;
+            top: 0;
+        }
+    }
+
+    fieldset.fontsampler-fix-default-settings {
+        li {
+            margin: 1em 0;
+        }
+        .submit {
+            margin: 0;
+        }
+    }
+
+    .fontsampler-list-font-link {
+        cursor: pointer;
+    }
+
+    .ui-sortable-handle {
+        cursor: grab;
+        padding: 5px 10px;
+    }
+
+    .ui-sortable-helper {
+        background: @fs_color_ok_light;
+    }
+}
+
+
+.fontsampler-changelog-fix strong {
+    color: @fs_color_warning;
+}
+
+.fontsampler-changelog-tweak strong {
+    color: @fs_color_add;
+}
+
+.fontsampler-changelog-feature strong {
+    color: @fs_color_ok;
+}
+.fontsampler-changelog-notice strong {
+    color: @fs_color_delete;
+}

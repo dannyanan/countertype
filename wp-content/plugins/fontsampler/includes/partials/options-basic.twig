@@ -1,0 +1,69 @@
+<strong>Fontsampler script direction is:</strong>
+<label>
+    <input type="radio" name="is_ltr" value="1"
+            {% if set.is_ltr == 1 %} checked="checked" {% endif %}>
+    <span>Left to Right</span>
+</label>
+<label>
+    <input type="radio" name="is_ltr" value="0"
+            {% if set.is_ltr == 0 %} checked="checked" {% endif %}>
+    <span>Right to Left</span>
+</label>
+
+<label>
+    <span>The initial text displayed in the font sampler, for example the font name or pangram. You can use multi-line text here as well.</span><br>
+    <textarea name="initial" rows="5"
+              dir="{% if set.is_ltr == 1 %}ltr{% else %}rtl{% endif %}"
+              style="text-align: {{ set.alignment_initial is not empty ? set.alignment_initial : defaults.alignment_initial }};"
+    >{% if set.initial is not empty %}{{ set.initial }}{% endif %}</textarea>
+</label>
+
+
+<div class="fontsampler-options default-text-alignment">
+    <strong>Default text alignment:</strong>
+    <div>
+        <label>
+            <div class="fontsampler-image-radio {% if set.alignment_initial == 'left' %} active {% endif %}">
+                <input type="radio" name="alignment_initial" data-value="left" value="left"
+                        {% if set.alignment_initial == 'left' %} checked="checked" {% endif %}>
+                <i class="icon-align-left"></i> Left
+            </div>
+        </label>
+        <label>
+            <div class="fontsampler-image-radio {% if set.alignment_initial == 'center' %} active {% endif %}">
+                <input type="radio" name="alignment_initial" data-value="center" value="center"
+                        {% if set.alignment_initial == 'center' %} checked="checked" {% endif %}>
+                <i class="icon-align-center"></i> Centered
+            </div>
+        </label>
+        <label>
+            <div class="fontsampler-image-radio {% if set.alignment_initial == 'right' %} active {% endif %}">
+                <input type="radio" name="alignment_initial" data-value="right" value="right"
+                        {% if set.alignment_initial == 'right' %} checked="checked" {% endif %}>
+                <i class="icon-align-right"></i> Right
+            </div>
+        </label>
+        {% if settings is empty %}
+        <label>
+            <div class="fontsampler-image-radio {% if set.alignment_initial is empty %} active {% endif %}">
+                <input type="radio" name="alignment_initial" data-value="{{ defaults.alignment_initial }}" value="default"
+                        {% if set.alignment_initial is empty %} checked="checked" {% endif %}>
+                <i class="icon-align-{{ defaults.alignment_initial }}"></i> Use default ({{ defaults.alignment_initial }})
+            </div>
+        </label>
+        {% endif %}
+    </div>
+</div>
+
+<div class="fontsampler-options fontsampler-options-missing-glyphs">
+    <strong>Treatment of missing glyphs:</strong>
+    <p>What should happen when a user types a character that the currently selected webfont
+    does not include.</p>
+    <select name="notdef">
+        {% if not settings %}<option value="default" {% if set.notdef is empty %}selected="selected"{% endif %}>Use default settings: ({{ notdef[defaults.notdef] }})</option>{% endif %}
+        <option value="0" {% if (settings and defaults.notdef == "0") or (not settings and set.notdef == "0") %}selected="selected"{% endif %}>{{ notdef[0] }}</option>
+        <option value="1" {% if (settings and defaults.notdef == "1") or (not settings and set.notdef == "1") %}selected="selected"{% endif %}>{{ notdef[1] }}</option>
+        <option value="2" {% if (settings and defaults.notdef == "2") or (not settings and set.notdef == "2") %}selected="selected"{% endif %}>{{ notdef[2] }}</option>
+        <option value="3" {% if (settings and defaults.notdef == "3") or (not settings and set.notdef == "3") %}selected="selected"{% endif %}>{{ notdef[3] }}</option>
+    </select>
+</div>

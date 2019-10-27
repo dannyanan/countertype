@@ -1,0 +1,66 @@
+@import "admin-variables.less";
+
+#fontsampler-admin {
+    .form-settings {
+        .fontsampler-admin-slider-label .setting-description {
+            min-width: 10em;
+            display: inline-block;
+        }
+    }
+    .form-settings label {
+        clear: both;
+        display: block;
+        margin: 10px 0;
+
+        span.styling-description {
+            float: left;
+        }
+
+        div.fontsampler-admin-slider {
+            display: inline-block;
+            width: 20em;
+        }
+
+        span input[type="text"],
+        span input.current-value {
+            width: 3em;
+        }
+
+        textarea {
+            clear: both;
+            display: block;
+        }
+
+        small {
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        input.fontsampler-admin-slider-label {
+            width: 15em;
+        }
+    }
+
+    // reset button / form at the top of the settings page
+    .fontsampler-settings-reset {
+        display: inline-block;
+        float: right;
+        position: relative;
+        top: -5em;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .fontsampler-admin-feature-label-reset {
+        border-width: 2px;
+        color: @fs_color_warning;
+        cursor: pointer;
+
+        &:hover, &:focus {
+            border-color: @fs_color_warning;
+            color: @fs_color_warning;    
+        }
+    }
+}

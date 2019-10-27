@@ -1,0 +1,332 @@
+@import (less) "fontsampler-icons.css"; 
+@import "fontsampler-custom-selectric.less";
+@import "fontsampler-custom-rangeslider.less"; 
+
+.fontsampler-warning {
+    background: #C0402F;
+    color: white;
+    padding: 1em;
+}
+
+.fontsampler-wrapper {
+
+    &.on-loading {
+        > * {
+            opacity: 0;
+            transition: opacity 0s;
+        }
+    }
+
+    > * {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .fontsampler-interface {
+        clear: both;
+
+        // make the wrapper span around all floated content blocks
+        &:after {
+            clear: both;
+            content: " ";
+            display: block;
+            width: 100%;
+        }
+
+        // row breaks
+        .fontsampler-interface-row-break {
+            clear: both;
+            height: 1px;
+            width: 100%;
+        }
+
+        // different column layouts; define all
+        // .fontsampler-ui-blocks accordingly via mixin
+        &.columns-1 {
+            .blocks(1);
+        }
+
+        &.columns-2 {
+            .blocks(2);
+        }
+
+        &.columns-3 {
+            .blocks(3);
+        }
+
+        &.columns-4 {
+            .blocks(4);
+        }
+
+        @media screen and (max-width: 768px) {
+            .blocks(1) !important;
+        }
+ 
+        // any and all fontsampler UI elements are wrapped in this
+        .fontsampler-ui-block {
+            box-sizing: border-box;
+            float: left;
+            line-height: 1.2;
+
+            .rtl & {
+                float: right;
+            }
+
+            &.fontsampler-ui-block-fontsampler {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        // generic class for "paired" up toggle buttons
+        .fontsampler-multiselect {
+            box-sizing: border-box;
+            float: left;
+            padding-right: 5px;
+            height: 100%;
+
+            .rtl & {
+                float: right;
+            }
+
+            &.one-item {
+                width: 30px;
+                > button {
+                    width: 100%;
+                }
+            }
+
+            &.two-items {
+                width: 60px;
+                > button {
+                    width: 50%;
+                }
+            }
+            &.three-items {
+                width: 90px;
+                > button {
+                    width: 33%;
+                }
+            }
+
+            > button {
+                background: #fff;
+                border: 0;
+                border-bottom: 1px solid #333;
+                font-size: inherit;
+                font-family: inherit;
+                color: #333;
+                cursor: pointer;
+                font-weight: inherit;
+                height: 100%;
+                line-height: 4px;
+                text-transform: none;
+                border-radius: 0;
+                display: block;
+                float: left;
+                padding: 0 2px;
+                margin: 0;
+                text-align: center;
+                outline: none;
+
+                img {
+                    display: block;
+                    max-width: 15px;
+                    max-height: 15px;
+                    margin: 0 auto;
+                }
+            }
+
+            .fontsampler-multiselect-selected {
+                opacity: 1;
+            }
+        }
+
+        .type-tester__slider {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        label.fontsampler-slider {
+            display: block;
+            position: relative;
+            height: 100%;
+            width: 100%;
+
+            .fontsampler-slider-header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            // the label above the slider
+            .slider-label {
+                height: 90%;
+                overflow: hidden;
+            }
+
+            // the value above the slider
+            .slider-value {
+                text-align: right;
+            }
+        }
+
+        // several specific blocks:
+
+        // dropdown for font family picker OR font family name if single font
+        .fontsampler-ui-block-fontpicker {
+
+            // single font: just display a label
+            .fontsampler-font-label {
+                height: 100%;
+
+                label {
+                    display: block;
+                    height: 100%;
+                    overflow: hidden;
+                }
+            }
+
+            // multiple fonts: display dropdown
+            .font-lister {
+                height: 100%;
+            }
+        }
+
+        // links for buy and specimen download
+        .fontsampler-ui-block-buy,
+        .fontsampler-ui-block-specimen {
+            a {
+                box-shadow: none;
+                display: inline-block;
+                height: 100%;
+                width: auto;
+                text-decoration: none !Important;
+
+                img {
+                    display: block;
+                    max-height: 100%;
+                    width: auto;
+                }
+
+                .fontsampler-interface-link-text {
+                    display: block;
+                }
+            }
+        }
+
+        // the actual container of the type sample
+        .fontsampler, .type-tester__content {
+            clear: both;
+            margin-bottom: 20px;
+            margin-top: 0.25em;
+            transition: all 0.2s ease-out;
+            padding: 0.25em 0.15em;
+
+            &:focus {
+                outline: none;
+            }
+
+            // force single line when single line
+            &.fontsampler-is-singleline {
+                overflow-x: hidden;
+                overflow-y: visible;
+                white-space: nowrap;
+            }
+
+            &.invert {
+                color: #eee;
+                background: #333;
+            }
+        }
+
+        .fontsampler-ui-block-opentype {
+            &.feature-lister__features-empty {
+                display: none;
+            }
+
+            .fontsampler-opentype {
+                position: relative;
+            }
+
+            .fontsampler-opentype-toggle img {
+                max-height: 20px;
+                max-width: 20px;
+            }
+
+            .fontsampler-opentype-features {
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 35px;
+                text-align: right;
+                background: #ffffff;
+                height: auto;
+                text-align: left;
+                padding: 5px;
+                width: 30em;
+                z-index: 10;
+
+                &.shown {
+                    display: block;
+                }
+
+                button.fontsampler-toggle {
+                    height: 20px;
+                    width: 20px;
+                }
+
+                fieldset {
+                    display: block;
+                    margin: 0;
+                    border: 0;
+                    height: auto;
+                    padding: 10px;
+
+                    label {
+                        box-sizing: border-box;
+                        float: left;
+                        margin-bottom: 10px;
+                        position: relative;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        width: 50%;
+
+                        input {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                        span {
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .fontsampler-ui-block-invert {
+            //button[data-value="positive"] img {
+            //    background: #fff;
+            //}
+            //button[data-value="negative"] img {
+            //    background: #333;
+            //}
+        }
+    }
+}
+
+.blocks(@cols) {
+    .fontsampler-ui-block {
+        &.column {
+            width: 100% / @cols;
+        }
+        &.inline {
+        }
+        &.full {
+            width: 100%;
+        }
+    }
+}
+
+@import "fontsampler-interface.less";

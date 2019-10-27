@@ -1,0 +1,48 @@
+{% extends('layout.twig') %}
+
+{% block content %}
+<h1>Thanks for updating Fontsampler!</h1>
+    <div class="text-box">
+        <div class="notice notice-info">
+            <p>This update only includes minor improvements to Opentype feature detection. No action required, hurray!</p>
+        </div>
+    </div>
+    <h2>Here is what changed with this latest release 0.4.4:</h2>
+    <div class="text-box">
+        <ul class="real-list">
+            <li class="fontsampler-changelog-fix"><strong>FIX:</strong> Made 'init' and 'fina' Opentype Features available in the context menu for fonts that support them</li>
+        </ul>
+    </div>
+    <br>
+    <form method="post" action="?page=fontsampler">
+        <input type="hidden" name="action" value="hide_changelog">
+        {{ wp_nonce_field( 'fontsampler-action-hide_changelog' )|raw }}
+        <input type="submit" class="button button-primary" value="Ok, got it!"><br><br>
+        <small>(And hide this tab until the next update)</small>
+    </form>
+    <br>
+    <h2>Feedback, questions, bugs?</h2>
+    <p>In case you have feedback on this plugin or update, found any bugs
+        or encounter any questions, feel free to ask
+        <a href="https://wordpress.org/support/plugin/fontsampler">on the Wordpress support forum</a>
+        or on the <a href="https://github.com/kontur/fontsampler-wordpress-plugin/issues">Github repository page</a>.
+    </p>
+    <p>Before you get in touch, please check the <a href="https://wordpress.org/plugins/fontsampler/#faq">FAQ</a>
+        and <a href="http://fontsampler.johannesneumeier.com/">official website</a> -
+        maybe there already is an answer to your question.
+    </p>
+    <h2>Get featured</h2>
+    <p>Using Fontsampler on your Wordpress site? Please be <a href="mailto:support@underscoretype.com">in touch</a>
+        if you want your website featured on an upcoming "in-use" section on the
+        <a href="http://fontsampler.johannesneumeier.com">official plugin website</a>. Your site can be featured with
+        screenshots, links to your fonts and foundry site.
+    </p>
+    <aside>
+        If for some reason you need a previous version of Fontsampler, you can
+        download those as zip files from
+        <a href="https://wordpress.org/plugins/fontsampler/advanced/">the Wordpress plugin registry</a>
+        and manually install them on your server. However, it is highly recommended to keep
+        the plugin up-to-date.
+    </aside>
+    <br>
+{% endblock %}
