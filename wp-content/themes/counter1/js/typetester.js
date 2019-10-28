@@ -126,18 +126,14 @@ switchBox.addEventListener('click', function(){
 
 // OPENTYPE FEATURES
 
-let ssList = [document.getElementById('ss00'), document.getElementById('ss01'), document.getElementById('ss02'), document.getElementById('ss03'), document.getElementById('ss04'), document.getElementById('ss05')];
+let ssList = [document.querySelector('#ss00'), document.querySelector('#ss01'), document.querySelector('#ss02'), document.querySelector('#ss03'), document.querySelector('#ss04'), document.querySelector('#ss05')];
 
 let typeSpecPara = document.querySelector('#typeSpecimen p');
 
 for (i = 0; i < ssList.length; i++) {
     ssList[i].addEventListener('click',function(){
         let id = this.id;
-        typeSpecPara.style['-moz-font-feature-settings'] = `"${id}" 1`;
-        typeSpecPara.style['font-feature-settings'] = `"${id}" 1`;
-        typeSpecPara.style['-ms-font-feature-settings'] = `"${id}" 1`;
-        typeSpecPara.style['o-font-feature-settings'] = `"${id}" 1`;
-        typeSpecPara.style['-webkit-font-feature-settings'] = `"${id}" 1`;
+        typeSpecPara.style.fontFeatureSettings = id;
         console.log(id);
     });
 };
