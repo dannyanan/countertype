@@ -10,9 +10,9 @@
             <section class="fontSize">
                 <label for="size" id="label--size">
                     Size 
-                    <span id="sizeDetail">24<?php the_field('size-default'); ?>px</span>
+                    <span id="sizeDetail">24px</span>
                 </label>
-                <input type="range" id="size" min="<?php the_field('size-min'); ?>" max="<?php the_field('size-max'); ?>" value="<?php the_field('size-default'); ?>">
+                <input type="range" id="size" min="8" max="120" value="24">
             </section>
             <!--END FONT SIZE-->
 
@@ -20,9 +20,9 @@
             <section class="lineHeight">
                 <label for="leading" id="label--leading">
                     Leading 
-                    <span id="leadingDetail">100<?php the_field('leading-default'); ?>%</span>
+                    <span id="leadingDetail">100%</span>
                 </label>
-                <input type="range" id="leading" min="<?php the_field('leading-min'); ?>" max="<?php the_field('leading-max'); ?>" value="<?php the_field('leading-default'); ?>">
+                <input type="range" id="leading" min="50" max="300" value="110">
             </section>
             <!--END LINE HEIGHT-->
 
@@ -30,9 +30,9 @@
             <section class="letterSpacing">
                 <label for="kerning" id="label--kerning">
                     Kerning 
-                    <span id="kerningDetail">0<?php the_field('kerning-default'); ?>px</span>
+                    <span id="kerningDetail">0px</span>
                 </label>
-                <input type="range" id="kerning" min="<?php the_field('kerning-min'); ?>" max="<?php the_field('kerning-max'); ?>" value="<?php the_field('kerning-default'); ?>">
+                <input type="range" id="kerning" min="-10" max="100" value="0">
             </section> 
             <!--END KERNING-->
 
@@ -68,7 +68,7 @@
             <p contenteditable="true">THIS TEXT IS EDITABLE</p>
         </section>
 
-        <section class="opentype">
+        <!-- <section class="opentype">
             <h6>Stylistic Alternatives</h6>
             <ul class="otList">
                 <li><button id="ss00">01</button></li>
@@ -78,6 +78,6 @@
                 <li><button id="ss04">05</button></li>
                 <li><button id="ss05">06</button></li>
             </ul>
-        </section>
+        </section> -->
 
     </div>

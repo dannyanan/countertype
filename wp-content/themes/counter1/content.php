@@ -16,7 +16,7 @@
           <li>&nbsp;&ndash;&nbsp;</li>
           <li><?php the_field('typeface_category')?></li>
           <li>&nbsp;&ndash;&nbsp;</li>
-          <li>Price:&nbsp;<?php the_field('typeface_price')?></li>
+          <li>Price: $<?php the_field('typeface_price')?></li>
         </ul>
     </a>
 <?php endwhile;

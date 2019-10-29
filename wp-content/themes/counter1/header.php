@@ -9,8 +9,9 @@
   <meta name="author" content="Counter Brand & Type">
 
   <title><?php echo get_bloginfo( 'name' ); ?></title>
-  <link href="<?php echo get_bloginfo( 'template_directory' );?>/typetester.css" rel="stylesheet">
+
   <link href="<?php echo get_bloginfo( 'template_directory' );?>/style.css" rel="stylesheet">
+  <link href="<?php echo get_bloginfo( 'template_directory' );?>/typetester.css" rel="stylesheet">
   
   <?php wp_head();?>
 </head>
