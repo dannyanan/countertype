@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: black;
 }
 
-.menuButton {
+#menuButton {
   position: absolute;
   top: 0;
   left: 0;
@@ -140,14 +140,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media screen and (min-width: 900px) {
-  .menuButton {
-    display: none;
-    width: 0;
-    height: 0;
+  #menuButton {
+    display: block;
+    width: auto;
+    height: auto;
   }
 }
 
-.menuButton button {
+#menuButton button {
   display: block;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -159,13 +159,11 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-.menuButton button:hover {
+#menuButton button:hover {
   cursor: pointer;
 }
 
-.sidebar {
-  -webkit-transform: translateX(-999px);
-          transform: translateX(-999px);
+#sidebar {
   background-color: black;
   padding: 8vw;
   min-height: 100vh;
@@ -184,12 +182,17 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 999;
 }
 
 @media screen and (min-width: 900px) {
-  .sidebar {
+  #sidebar {
     padding: 3vw;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -206,19 +209,19 @@ h1, h2, h3, h4, h5, h6, p {
             order: 1;
     grid-row: 1 / -1;
   }
-  .sidebar p {
+  #sidebar p {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-.sidebar::-webkit-scrollbar {
+#sidebar::-webkit-scrollbar {
   /* hides scrollbar on sidebar menu */
   width: 0 !important;
   background: transparent;
 }
 
-.sidebar main {
+#sidebar main {
   background: #BD7100;
   padding: 25px 0 0;
   display: -ms-grid;
@@ -232,18 +235,25 @@ h1, h2, h3, h4, h5, h6, p {
   grid-column: 1 / -1;
 }
 
-.sidebar h2 {
+#sidebar h2 {
   font-size: 1.1rem;
   line-height: 1.1rem;
   margin: 0 0 20px;
   padding: 0 10px;
 }
 
-.sidebar p {
+#sidebar p {
   line-height: 1.325rem;
   font-size: 1.25rem;
   margin: 0 0 50px;
   padding: 0 10px;
+}
+
+#sidebar.hidden {
+  -webkit-transform: translateX(-999px);
+          transform: translateX(-999px);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .sidebar__nav--primary ul {
@@ -312,6 +322,14 @@ h1, h2, h3, h4, h5, h6, p {
 .sidebar__nav--secondary ul li a {
   color: #F1EDE3;
   text-decoration: none;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.sidebar__nav--secondary ul li a:hover {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  opacity: .6;
 }
 
 .home {
@@ -396,6 +414,12 @@ main.typeface--single .content a:first-of-type {
   font-family: 'Space Mono', monospace;
   font-weight: 400;
   color: black;
+}
+
+@media screen and (min-width: 900px) {
+  main.typeface--single .content a:first-of-type {
+    margin-top: 15px;
+  }
 }
 
 .typeface__top {

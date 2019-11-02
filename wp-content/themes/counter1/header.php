@@ -17,7 +17,3 @@
 </head>
 
 <body>
-
-<div class="menuButton">
-  <button>|||</button>
-</div>

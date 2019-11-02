@@ -1,4 +1,4 @@
-<aside class="sidebar">
+<aside id="sidebar" class="hidden">
 	<main>
 		<section class="sidebar__about">
 			<h2>About <span>&mdash;&mdash;</span></h2>

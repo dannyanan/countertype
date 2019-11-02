@@ -1,9 +1,10 @@
+document.addEventListener('DOMContentLoaded', function() {
+    
 window.addEventListener("load", function() {
-    // console.log('typetester.js loaded!');
 
 // Gets data from user and updates Type Tester
 
-let typeSpec = document.querySelector("#typeSpecimen");
+let typeSpec = document.getElementById("#typeSpecimen");
 
 // SET FONT FAMILY FOR PAGE
 let fontFamily = typeSpec.dataset.fontFamily;
@@ -143,3 +144,4 @@ for (i = 0; i < ssList.length; i++) {
 
 
 
+});

@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
  
  
-.menuButton {
+#menuButton {
      position: absolute;
      top: 0;
      left: 0;
@@ -88,9 +88,9 @@ h1, h2, h3, h4, h5, h6, p {
      padding: 10px 5px 5px 15px;
      z-index: 10;
      @media screen and (min-width:900px) {
-          display: none;
-          width: 0;
-          height: 0;     
+          display: block;
+          width: auto;
+          height: auto;     
      }
      button {
           display: block;
@@ -112,8 +112,7 @@ h1, h2, h3, h4, h5, h6, p {
 // SIDEBAR STYLES
 //------------------------------------
  
-.sidebar {
-     transform: translateX(-999px);
+#sidebar {
      background-color: black;
      padding: 8vw;
      min-height: 100vh;
@@ -128,7 +127,12 @@ h1, h2, h3, h4, h5, h6, p {
      -ms-overflow-style: none;
      transition: .25s ease-in-out;
      position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
      box-sizing: border-box;
+     z-index: 999;
      @media screen and (min-width:900px) {
           padding: 3vw;
           grid-column: 1 / 2;
@@ -169,6 +173,11 @@ h1, h2, h3, h4, h5, h6, p {
           margin: 0 0 50px;
           padding: 0 10px;
      }
+}
+
+#sidebar.hidden {
+     transform: translateX(-999px);
+     transition: .2s ease-in-out;
 }
 
 .sidebar__nav--primary ul {
@@ -224,6 +233,11 @@ h1, h2, h3, h4, h5, h6, p {
           li a {
                color: $white;
                text-decoration: none;
+               transition: .2s ease-in-out;
+               &:hover {
+                    transition: .2s ease-in-out;
+                    opacity: .6;
+               }
           }
      }
 }
@@ -291,6 +305,9 @@ main.typeface--single {
           font-family: 'Space Mono', monospace;
           font-weight: 400;
           color: black;
+          @media screen and (min-width:900px) {
+               margin-top: 15px;
+          }
      }
 }
  

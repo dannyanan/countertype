@@ -1,7 +1,9 @@
 <main class="home">
 
 <?php get_sidebar(); ?> <!--Loads in Sidebar Navigation Content-->
-
+<div id="menuButton">
+  <button>|||</button>
+</div>
 <section class="content">
 
 
