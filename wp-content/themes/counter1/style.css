@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #menuButton {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: black;
@@ -167,6 +167,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: black;
   padding: 8vw;
   min-height: 100vh;
+  max-height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -249,11 +250,42 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0 10px;
 }
 
+#sidebar button#closeMenu {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: black;
+  color: #F1EDE3;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#sidebar button#closeMenu img {
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  #sidebar button#closeMenu {
+    display: none;
+  }
+}
+
 #sidebar.hidden {
   -webkit-transform: translateX(-999px);
           transform: translateX(-999px);
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
+}
+
+@media screen and (min-width: 900px) {
+  #sidebar.hidden {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 .sidebar__nav--primary ul {
@@ -313,6 +345,11 @@ h1, h2, h3, h4, h5, h6, p {
   -ms-grid-columns: 1fr auto auto;
       grid-template-columns: 1fr auto auto;
   grid-gap: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-line-pack: end;
+      align-content: end;
   margin: 0 0 20px;
   padding: 0;
   font-family: 'Space Mono', monospace;
@@ -406,7 +443,7 @@ main.typeface--single {
   }
 }
 
-main.typeface--single .content a:first-of-type {
+main.typeface--single .content a.back {
   padding-left: 15px;
   margin-top: 50px;
   text-decoration: none;
@@ -417,7 +454,7 @@ main.typeface--single .content a:first-of-type {
 }
 
 @media screen and (min-width: 900px) {
-  main.typeface--single .content a:first-of-type {
+  main.typeface--single .content a.back {
     margin-top: 15px;
   }
 }
@@ -454,6 +491,12 @@ main.typeface--single .content a:first-of-type {
   margin-bottom: 25px;
   font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
   font-weight: 400;
+}
+
+.typeface__description p a {
+  font-size: 1.325rem;
+  font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 .typeface__hero {

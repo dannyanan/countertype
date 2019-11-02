@@ -1,4 +1,5 @@
 <aside id="sidebar" class="hidden">
+	<button id="closeMenu"><img src="<?php bloginfo('template_url'); ?>/img/close.svg"></button>
 	<main>
 		<section class="sidebar__about">
 			<h2>About <span>&mdash;&mdash;</span></h2>

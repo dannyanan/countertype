@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6, p {
  
  
 #menuButton {
-     position: absolute;
+     position: fixed;
      top: 0;
      left: 0;
      background: black;
@@ -116,6 +116,7 @@ h1, h2, h3, h4, h5, h6, p {
      background-color: black;
      padding: 8vw;
      min-height: 100vh;
+     max-height: 100vh;
      display: grid;
      grid-template-columns: 1fr;
      grid-auto-flow: row;
@@ -173,11 +174,33 @@ h1, h2, h3, h4, h5, h6, p {
           margin: 0 0 50px;
           padding: 0 10px;
      }
+     button#closeMenu {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 30px;
+          height: 30px;
+          background: black;
+          color: $white;
+          border: none;
+          font-size: 1.5rem;
+          cursor: pointer;
+          img {
+               width: 100%;
+          }
+          @media screen and (min-width:900px) {
+               display: none;
+          }
+     }
 }
 
 #sidebar.hidden {
      transform: translateX(-999px);
      transition: .2s ease-in-out;
+     @media screen and (min-width:900px) {
+          transform: translateX(0px);
+     }
 }
 
 .sidebar__nav--primary ul {
@@ -226,6 +249,8 @@ h1, h2, h3, h4, h5, h6, p {
           grid-auto-flow: column;
           grid-template-columns: 1fr auto auto;
           grid-gap: 10px;
+          align-items: end;
+          align-content: end;
           margin: 0 0 20px;
           padding: 0;
           font-family: 'Space Mono', monospace;
@@ -297,7 +322,7 @@ main.typeface--single {
      @media screen and (min-width:900px) {
           grid-template-columns: 2.5fr 3.5fr;
      }
-     .content a:first-of-type {
+     .content a.back {
           padding-left: 15px;
           margin-top: 50px;
           text-decoration: none;
@@ -336,6 +361,11 @@ main.typeface--single {
           margin-bottom: 25px;
           font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
           font-weight: 400;
+          a {
+               font-size: 1.325rem;
+               font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+               font-weight: 700;
+          }
      }
 }
  

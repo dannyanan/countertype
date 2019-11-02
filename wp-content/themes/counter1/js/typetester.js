@@ -4,7 +4,7 @@ window.addEventListener("load", function() {
 
 // Gets data from user and updates Type Tester
 
-let typeSpec = document.getElementById("#typeSpecimen");
+var typeSpec = document.querySelector("#typeSpecimen");
 
 // SET FONT FAMILY FOR PAGE
 let fontFamily = typeSpec.dataset.fontFamily;

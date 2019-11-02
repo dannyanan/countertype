@@ -4,7 +4,7 @@
 
     <section class="content">
 
-        <a href="<?php echo get_home_url(); ?>">&lt; back to home</a>
+        <a class="back" href="<?php echo get_home_url(); ?>">&lt; back to home</a>
         <header>
             <section class="typeface__top">   
                 <h6><?php the_field('typeface_name'); ?> &mdash;&mdash;</h6>
